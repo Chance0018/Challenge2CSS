@@ -43,6 +43,7 @@ h2 {
     align-items: flex-start;
     min-width: 85px;
     font-weight: bolder;
+    margin-left: 15px;
     
 }
 
@@ -80,7 +81,7 @@ a:hover {
 }
 
 .banner {
-    float: left;
+    float: right;
     padding: 15px;
 }
 
@@ -100,10 +101,6 @@ a:hover {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: flex-start;
-}
-
-.contactme h2  {
-    margin-left: 15px;
 }
 
 .about-section {
