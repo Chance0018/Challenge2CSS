@@ -10,7 +10,7 @@
 }
 
 header {
-  padding: 15px 6% 15px 0;
+  padding: 25px 15px 25px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -22,12 +22,13 @@ header {
 }
 
 footer {
-    padding: 15px 6% 15px 0;
+    padding: 25px 50px 25px 0;
     background-color: var(--main);
     color: var(--white);
     width: 100%;
     display: block;
     place-content: center;
+    margin-bottom: 25px;
 }
 
 
@@ -40,6 +41,13 @@ h2 {
     margin: 0 10px 10px 0;
     display: flex;
     align-items: flex-start;
+    min-width: 85px;
+    font-weight: bolder;
+    
+}
+
+p {
+    color: var(--white);
 }
 
 address a {
@@ -64,7 +72,11 @@ a {
 }
 
 a:hover {
-    color: var(--main);
+    color: var(--secondary);
+}
+
+.contactme a:hover {
+    background-color: var(--white);
 }
 
 .banner {
@@ -76,8 +88,13 @@ a:hover {
     display: inline;
 }
 
+.contactme a {
+    margin: 20px 20px 10px 10px;
+    padding: 20px 20px 10px 10px;
+}
+
 .contact-info {
-  padding: 15px 6% 15px 0;
+  padding: 25px 25px 25px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -85,12 +102,12 @@ a:hover {
   align-items: flex-start;
 }
 
-.contactme a {
-    margin: 0 0 70px 70px;
+.contactme h2  {
+    margin-left: 15px;
 }
 
 .about-section {
-  padding: 15px 6% 15px 0;
+  padding: 25px 15px 25px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -99,7 +116,7 @@ a:hover {
 }
 
 .project-flex {
-  padding: 15px 6% 15px 0;
+  padding: 25px 15px 25px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -108,12 +125,40 @@ a:hover {
 }
 
 .default1 {
+    background-image: url("../images/default1.webp");
+    background-size: cover;
+    background-position: center;
+    min-width: 165vh;
+    color: var(--main);
+    padding: 9% 9%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.default1:hover {
     background-image: url("../images/default1.webp"), linear-gradient(180deg, var(--secondary) 0%, var(--main) 100%);
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
-    min-height: 60vh;
+    min-width: 165vh;
     color: var(--white);
+    padding: 9% 9%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.default2 {
+    background-image: url("../images/default2.webp");
+    background-size: cover;
+    background-position: center;
+    min-width: auto;
+    color: var(--main);
     padding: 3% 9%;
     display: flex;
     justify-content: flex-end;
@@ -121,12 +166,12 @@ a:hover {
     text-align: right;
 }
 
-.default2 {
+.default2:hover {
     background-image: url("../images/default2.webp"), linear-gradient(180deg, var(--secondary) 0%, var(--main) 100%);
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
-    min-height: 60vh;
+    min-width: auto;
     color: var(--white);
     padding: 3% 9%;
     display: flex;
@@ -136,11 +181,24 @@ a:hover {
 }
 
 .default3 {
+    background-image: url("../images/default3.webp");
+    background-size: cover;
+    background-position: center;
+    min-width: auto;
+    color: var(--main);
+    padding: 3% 9%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.default3:hover {
     background-image: url("../images/default3.webp"), linear-gradient(180deg, var(--secondary) 0%, var(--main) 100%);
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
-    min-height: 60vh;
+    min-width: auto;
     color: var(--white);
     padding: 3% 9%;
     display: flex;
@@ -148,3 +206,33 @@ a:hover {
     align-items: flex-end;
     text-align: right;
 }
+
+@media screen and (max-width: 922px) {
+
+    }
+
+@media screen and (max-width: 768px) {
+    .banner {
+        display: Block;
+        padding: 15px;
+    }
+    .default1 {
+        min-width: 50vh;
+    }
+    }   
+
+@media screen and (max-width: 420px) {
+    .default1 {
+        min-width: auto;
+    }
+    }
+    .contact-info {
+        padding: 10px 10px 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 0 0 0;
+    }
+    
